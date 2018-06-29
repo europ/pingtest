@@ -1,1 +1,3 @@
-# pingtest-gem
+# pingtest gem
+
+https://rubygems.org/gems/pingtest
