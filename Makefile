@@ -9,7 +9,7 @@ clean:
 	@rm -fv $(GEMNAME)*.gem
 
 .PHONY: install
-install: uninstall
+install: uninstall make
 	@gem install -V $(GEMNAME)*.gem
 
 .PHONY: uninstall
