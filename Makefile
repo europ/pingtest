@@ -16,3 +16,7 @@ install: uninstall
 uninstall:
 	@gem uninstall -V $(GEMNAME)
 	@gem cleanup -V $(GEMNAME)
+
+.PHONY: update
+update: make
+	@gem push -V $(GEMNAME)*.gem
