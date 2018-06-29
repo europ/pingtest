@@ -3,9 +3,9 @@ module Pingtest
   
   # Ping test
   #
-  # @return [nil] Puts "pong"
+  # @return [String] "pong"
   # 
   def self.ping
-    puts "pong"
+    return "pong"
   end
 end
