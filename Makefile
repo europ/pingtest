@@ -10,15 +10,15 @@ make: clean
 clean:
 	@rm -fv $(GEMNAME)*.gem
 
-# install gem
+# install local gem
 .PHONY: install
 install: uninstall make
-	@gem install -V $(GEMNAME)*.gem
+	@gem install -l -V ./$(GEMNAME)*.gem
 
 # uninstall gem
 .PHONY: uninstall
 uninstall:
-	@gem uninstall -V $(GEMNAME)
+	@gem uninstall -a -x -V $(GEMNAME)
 	@gem cleanup -V $(GEMNAME)
 
 # push a new gem
